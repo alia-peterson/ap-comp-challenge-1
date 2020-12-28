@@ -1,0 +1,19 @@
+* {
+  border: 1px solid pink;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  grid-template-areas:
+    "article1" "article2" "article3" "article4"
+    "article5" "article6" "article7" "article8";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}

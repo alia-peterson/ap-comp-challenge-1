@@ -8,10 +8,28 @@ html, body {
   /* width: 100vw; */
 }
 
-img {
-  object-fit: none;
-  object-position: 50% 20%;
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.card--image {
+  position: relative;
   width: 100%;
+}
+
+.card--image::before {
+  content: 'hi';
+  font-size: 3em;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .container {
@@ -37,6 +55,12 @@ img {
   color: white;
   height: 15vh;
   width: 100%;
+}
+
+.quote {
+  font-size: 14px;
+  min-height: 52px;
+  margin: 0;
 }
 
 #article1 {

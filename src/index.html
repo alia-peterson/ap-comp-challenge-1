@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Comp Challenge 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
@@ -11,23 +12,22 @@
   <div class="container">
     <header class="header">
       <nav class="header--nav">
-        <button class="header--nav-button" type="button" name="button">
-          <img class="button--icon" src="../assets/icon-share-list.svg" alt="Share Icon">
-          SHARES
+        <button class="header--nav-button" type="button" name="share" disabled="true">
+          <img id="button--share" class="button--icon" src="../assets/icon-share-list.svg" alt="Share Icon">SHARES
         </button>
-        <button class="header--nav-button" type="button" name="button">
-          <img class="button--icon" src="../assets/icon-seasons.svg" alt="Season Icon">
-          SEASONS
+        <button class="header--nav-button" type="button" name="seasons">
+          <img class="button--icon" src="../assets/icon-seasons.svg" alt="Season Icon">SEASONS
         </button>
-        <button class="header--nav-button" type="button" name="button">
-          <img class="button--icon" src="../assets/icon-forums.svg" alt="Forum Icon">
-          FORUMS
+        <button class="header--nav-button" type="button" name="forums">
+          <img class="button--icon" src="../assets/icon-forums.svg" alt="Forum Icon">FORUMS
         </button>
       </nav>
-      <div class="header--elements">
+      <div class="header--right">
         <menu class="menu--user">
-          <img class="button--icon" src="../assets/icon-user.svg" alt="User Icon">
-          User Profile ▽
+          <div class="icon--user">
+            <img class="button--icon" src="../assets/icon-user.svg" alt="User Icon">
+          </div>
+          <p id="hover-text">Hello!</p>
         </menu>
         <img class="logo" src="../assets/logo-apex.svg" alt="Apex Logo">
       </div>
